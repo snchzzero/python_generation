@@ -17,7 +17,7 @@ def equal_words(target_word: str, count: str) -> list:
         for i in range(len(word)):
             if word[i] in A_CHARS:
                 indexes.add(i)
-        if indexes.intersection(target_word_s) == target_word_s:
+        if indexes == target_word_s:
             result.append(word)
     return result
 
